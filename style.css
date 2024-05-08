@@ -1,5 +1,38 @@
 body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    font-style: Arial
+    font-family: "Calibri", "Arial";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+  li {
+    float: left;
+    font-size: 25px;
+    font-family: "Calibri", "Arial";
+    font-weight: normal;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: rgb(65, 50, 226);
+  }
+
+.active {
+    color: white;
+    background-color: rgb(45, 34, 159);
 }
