@@ -3,16 +3,19 @@
 In this README.md location, I will also add notes regarding website development.
 
 ### Project Title: 
+Sora Shima DTE Website
 
 ### Project Description:
+Website dedicated to the music band Sora Shima, using the leader as my stakeholder. (More details to be determined)
 
 ### Instructions to use webpage:
+Utilise the navigation bar to travel the website's pages.
 
 ### Credits: 
+Myself.
 
 ### Notes:
-- Add comments to webpage code.
-- Name webpage file to index.html.
-- Provide options for header inside and outside div.
-- Provide options for footer inside and outside div.
-- Test nav and section within div.
+- Add comments to webpage code. (DONE)
+- Name webpage file to index.html. (DONE)
+- Produce a functional navigation bar. (DONE)
+- Include images and other media to home page.
