@@ -1,151 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* { /* Asterix class is all elements within the html pages */
+    margin: 0; /* All element margins (the space around the border) are set to zero unless overridden */
+    padding: 0; /* All element padding (the space between border and content) is set to zero unless overridden */
+    box-sizing: border-box; /* All elements border and padding will be merged with width/height values */
+    font-family: 'Poppins', sans-serif; /* List of all elements fonts in order of loading attempts. If one does not work, then the next will be tried. */
+}
+
+html {
+    font-size: 10px;
 }
 
 body {
-    background: #ffffff;
-    min-height: 110vh;
+    background: #ffffff; /* Sets background colour of the webpage to white. */
+    min-height: 110vh; /* Sets the minimum webpage viewport height to 110, which means the view of the user is only 91% of all page height (100%/110%) */
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; /* Sets font size of element to 20 pixels. */
+    font-weight: normal; /* Sets thickness of text to default. */
+    padding: 5rem 5rem;
+}
+
+img {
+    width: 55rem;
+    margin-right: 5rem;
 }
 
 .paragraph {
     font-family: 'Poppins', sans-serif;
-    position: relative;
-    font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-    padding-top: 25px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 25px;
-}
-
-.container {
-    max-width: 1170px;
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-ul {
-    list-style: none;
-}
-
-.footer {
-    background-color: #24262b;
-    padding: 70px 0;
-}
-
-.footer-col {
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer-col h4 {
-    font-size: 18px;
-    color: #ffffff;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-}
-
-.footer-col h4::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #616fe7;
-    height: 2px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    display: block;
-    transition: all 0.2s;
-}
-
-.footer-col ul li a:hover {
-    color: #ffffff;
-    padding-left: 0px;
-}
-
-.footer-col .social-links a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255,0.2);
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.2s;
-}
-
-.footer-col .social-links a:hover {
-    color: #24262b;
-    background-color: #ffffff;
+    position: relative; /* Position of element is set relative to where it is placed by default, rather than absolute location. */
+    font-size: 2rem; /* Sets font size of element to 20 pixels. */
+    font-weight: normal; /* Sets thickness of text to default. */
+    text-align: center; /* Sets alignment of text to center of page. */
+    padding: 6rem 20rem; /* Sets padding of top and bottom to be total of 60px, and left and right to be total of 200px. */
+    letter-spacing: 0.125rem; /* Sets the gap between letters in element to be 1.25px, with default being 1px. */
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 550;
-    color: #fff;
-    padding-left: 900px;
-    padding-top: 55px;
+    color: #000000;
+    padding-left: 90rem;
+    margin-top: 6rem;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 550;
-    color: #fff;
-    padding-left: 900px;
-    padding-top: 465px;
+    color: #000000;
+    padding-left: 90rem;
+    padding-top: 47rem;
+    line-height: 4.5rem;
 }
 
 .thin {
-    font-size: 32px;
+    font-size: 3rem;
     font-weight: 350;
+}
+
+.para {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2rem;
 }
 
 header {
     position: fixed;
+    font-size: 1.6rem;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Items will have space between them in container. */
+    align-items: center; /* Aligns items to center of container. */
     transition: 0.4s;
-    padding: 40px 100px;
-    z-index: 100000;
+    padding: 4rem 10rem;
+    z-index: 100000; /* Sets layer order of header to be far larger than anything else could possibly be, so it is always in front. */
 }
 
 header.sticky {
-    padding: 5px 100px;
+    padding: 0.5rem 10rem;
     background: #fff;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2); /* Sets shadow of navbar in sticky state to be offset by 4px vertically, and blur for 8px. */
 }
 
 header .logo {
@@ -153,9 +97,9 @@ header .logo {
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 2em; /* Set font size to be double the element size. */
+    text-transform: uppercase; /* Sets all characters to be uppercase if not already. */
+    letter-spacing: 0.2rem;
     transition: 0.6s;
 }
 
@@ -168,15 +112,15 @@ header ul {
 
 header ul li {
     position: relative;
-    list-style: none;
+    list-style: none; /* Removes link listing style. */
 }
 
 header ul li a {
     position: relative;
-    margin: 0 15px;
+    margin: 0 1.5rem;
     text-decoration: none;
     color: #ffffffa9;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
     transition: 0.6s;
 }
 
@@ -186,32 +130,32 @@ header ul li a:hover {
 
 header ul li a::after {
     content: "";
-    height: 1.5px;
+    height: 0.15rem;
     width: 100%;
     background-color: #616fe7;
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -0.6rem;
     opacity: 0;
     transition: all 0.25s;
-    pointer-events: none;
+    pointer-events: none; /* Sets links to not react to hovering after. */
 }
 
 header ul li a:hover::after {
-    opacity: 1;
+    opacity: 1; /* Sets opacity to 100%. */
 }
 
 .banner {
     position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../images/sky_island_background.jpg);
-    filter: brightness(40%);
-    background-size: cover;
-    z-index: -1;
+    width: 100%; /* Sets width to 100%. */
+    height: 100vh; /* Sets height to 100% of viewing height. */
+    background-image: url(../images/sky_island_background.jpg); /* Sets background image to the file location of image. */
+    filter: brightness(40%); /* Applies a filter to banner which reduces brightness, allowing for contrast. */
+    background-size: cover; /* Sets background size to cover available space. */
+    z-index: -1; /* Sets banner to behind other layers. */
 }
 
-.releases-banner {
+.releases-banner { /* Same as banner but with different image. */
     position: relative;
     width: 100%;
     height: 100vh;
@@ -221,49 +165,69 @@ header ul li a:hover::after {
     z-index: -1;
 }
 
+.about-banner { /* Same as banner but with different image. */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/about_background.jpg);
+    filter: brightness(40%);
+    background-size: cover;
+    z-index: -1;
+}
+
+.contact-banner { /* Same as banner but with different image. */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/contact_background.jpg);
+    filter: brightness(45%);
+    background-size: cover;
+    z-index: -1;
+}
+
 .header {
     position: absolute;
     top: 0;
     font-weight: 505;
-    font-size: 75px;
+    font-size: 7.5rem;
     color: #fff;
-    padding: 265px 96px;
-    letter-spacing: 1px;
+    padding: 26.5rem 9.6rem;
+    letter-spacing: 0.1rem;
     z-index: 1;
 }
 
 .title {
     position: absolute;
-    top: 250px;
+    top: 25rem;
     width: 100%;
     text-align: center;
     font-weight: 505;
-    font-size: 75px;
+    font-size: 7.5rem;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     z-index: 1;
 }
 
 .subheader {
     position: absolute;
-    top: 370px;
-    margin-left: 100px;
+    top: 37rem;
+    margin-left: 10rem;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
-    padding-right: 700px;
-    letter-spacing: 1.25px;
+    padding-right: 70rem;
+    letter-spacing: 0.125rem;
 }
 
 .subheader2 {
     position: absolute;
-    top: 395px;
-    margin-left: 100px;
+    top: 39.5rem;
+    margin-left: 10rem;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
-    padding-right: 700px;
-    letter-spacing: 1.25px;
+    padding-right: 70rem;
+    letter-spacing: 0.125rem;
 }
 
 header.sticky .logo {
@@ -274,7 +238,95 @@ header.sticky ul li a {
     color: #000;
 }
 
+.container {
+    max-width: 117rem; /* Sets element (all contents of footer) width to be a maximum of 1170 pixels. */
+    margin: auto; /* Sets margin to automatically center within the parent element (footer). */
+}
+
+.row {
+    display: flex; /* Sets container elements to allow flexibility in placement. */
+    flex-wrap: wrap; /* Sets content to wrap when there is not enough space. */
+}
+
+ul {
+    list-style: none; /* Removes link style. */
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 7rem 0;
+}
+
+.re-footer {
+    background-color: #24262b;
+    padding: 7rem 0;
+    margin-top: 5.5rem; /* Sets top margin to be specifically 55px. This produces a gap between content above. */
+}
+
+.footer-col {
+    width: 25%; /* Sets width of footer columns to be exactly 1/4 of the container width, as there is 4 columns. */
+    padding: 0 1.5rem;
+}
+
+.footer-col h4 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-transform: capitalize; /* Makes all text elements to being with capital letters if not already. */
+    margin-bottom: 3.5rem;
+    font-weight: 500; /* Sets font weight to be 500, which is slightly bolder than normal (400). */
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: ''; /* Adds invisible element to content so that effects can happen, which is the underline. */
+    position: absolute; /* Sets position to an absolute and defined value in the container. */
+    left: 0; /* Sets position to not move right. */
+    bottom: -1rem; /* Moves underline up 10px from default. */
+    background-color: #616fe7;
+    height: 0.2rem; /* Sets underline height to 2px. */
+    box-sizing: border-box;
+    width: 100%; /* Sets width of underline to be the entire length of the column. */
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 1rem; /* Moves first three columns upwards by 10px. */
+}
+
+.footer-col ul li a {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none; /* Removes default text decoration. */
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block; /* Sets display to start on new line and use available width. */
+    transition: all 0.2s; /* Sets hover transition over the column text to occur over 0.2 seconds. */
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff; /* Sets hover colour to change to white from a greyish colour. */
+    padding-left: 0px;
+}
+
+.footer-col .social-links a {
+    font-size: 1.6rem; /* Sets the size of the social media logo icons to be 16px, the default size. */
+    display: inline-block; /* Sets display to stay in current line, but still use available width and apply custom dimensions. */
+    height: 4rem; /* Sets height of social media links to be 40px tall. */
+    width: 4rem; /* Sets height of social media links to be 40px wide. */
+    background-color: rgba(255,255,255,0.2); /* Sets background colour to be black but 80% opaque. */
+    text-align: center;
+    line-height: 4rem; /* Sets the height of the line to 40px so the icon images are centered inside the link slots. */
+    border-radius: 50%; /* Sets radius of link slots to be circular and 50% of 40px tall and wide. */
+    color: #ffffff;
+    transition: all 0.2s;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
 iframe {
-    margin-left: 100px;
-    margin-top: 50px;
+    margin-left: 10rem;
+    margin-top: 5rem;
 }
