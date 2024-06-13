@@ -137,7 +137,7 @@ header ul li a::after {
     content: "";
     height: 0.15rem;
     width: 100%;
-    background-color: #616fe7;
+    background-color: #0a7bf5;
     position: absolute;
     left: 0;
     bottom: -0.6rem;
@@ -235,6 +235,38 @@ header ul li a:hover::after {
     letter-spacing: 0.125rem;
 }
 
+.r-container h1 {
+    margin: 1rem 0rem;
+    background-color: #24262b;
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    font-size: 4rem;
+    padding: 3rem;
+    text-align: center;
+    border-bottom: 0.6rem solid #0a7bf5;
+}
+
+.r-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.r-box iframe {
+    margin-right: 1.5rem;
+}
+
+.r-box h3 {
+    margin-left: 1.5rem;
+}
+
+.r-box h3 span {
+    margin-left: 0.6rem;
+    font-weight: 390;
+    color: #24262b;
+}
+
 header.sticky .logo {
     color: #000;
 }
@@ -259,7 +291,7 @@ header.sticky ul li a {
     flex-basis: 60%;
     padding: 4rem 6rem;
     border-style: solid;
-    border-color: #616fe7;
+    border-color: #0a7bf5;
 }
 
 .contact-left h3 {
@@ -339,12 +371,16 @@ button {
     height: 3.5rem;
     border-radius: 3rem;
     margin-top: 2rem;
-    box-shadow: 0rem 0.5rem 1rem 0rem rgba(28,0,181,0.2);
     transition: 0.3s ease;
 }
 
 button:hover {
-    background: #7b88ff;
+    box-shadow: 0rem 0rem 1rem 0.1rem rgba(28,0,181,0.4);
+    transition: 0.2s;
+}
+
+button:active {
+    background: #c1c7ff;
 }
 
 tr td:first-child {
@@ -399,7 +435,7 @@ ul {
     position: absolute; /* Sets position to an absolute and defined value in the container. */
     left: 0; /* Sets position to not move right. */
     bottom: -1rem; /* Moves underline up 10px from default. */
-    background-color: #616fe7;
+    background-color: #0a7bf5;
     height: 0.2rem; /* Sets underline height to 2px. */
     box-sizing: border-box;
     width: 100%; /* Sets width of underline to be the entire length of the column. */
@@ -441,13 +477,4 @@ ul {
 .footer-col .social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
-}
-
-iframe {
-    width: 75rem;
-    height: 36.7rem;
-    margin-left: 10rem;
-    margin-top: 5rem;
-    display: flex;
-    z-index: 1;
 }
